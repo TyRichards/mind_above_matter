@@ -1,0 +1,6 @@
+@import url( '../../style.css' );
+
+body {
+  margin: 10px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
