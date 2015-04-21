@@ -334,6 +334,18 @@ function zilla_customize_register($wp_customize) {
 			)
 	));
 
+	$wp_customize->add_setting( 'zilla_theme_options[googleplus_url]', array('default' => '', 'sanitize_callback' => 'esc_url_raw') );
+	$wp_customize->add_control( new WP_Customize_Control(
+			$wp_customize,
+			'zilla_googleplus_url',
+			array(
+					'label' => __( 'Google+ URL', 'zilla' ),
+					'section' => 'zilla_social_options',
+					'settings' => 'zilla_theme_options[googleplus_url]',
+					'priority' => 2
+			)
+	));	
+
 	$wp_customize->add_setting( 'zilla_theme_options[twitter_url]', array('default' => '', 'sanitize_callback' => 'esc_url_raw') );
 	$wp_customize->add_control( new WP_Customize_Control(
 			$wp_customize,

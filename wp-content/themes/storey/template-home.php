@@ -12,6 +12,20 @@ get_header(); ?>
 	<!--BEGIN #primary .site-main-->
 	<div id="primary" class="site-main" role="main">
 
+		<!-- customer area added by Paradox -->
+		<div class="inner clearfix">
+			<div class="zilla-one-half">
+				<p>Home Image</p>
+			</div>
+			<div class="zilla-one-half zilla-column-last">
+				<h2>Mind Above Matter</h2>
+				<p>We are an organization committed to offering innovative and individualized mental health services. We know first-hand that when a crisis occurs, you need someone you can trust. We offer flexible scheduling and creative group structure in order to meet community needs. We understand the critical need to maintain mental health safety while not disrupting school and work schedules. MAM offers Intensive Outpatient and Partial Hospitalization Services as an effective way of meeting both goals. Every attempt is made to manage crisis and restore emotional functioning on an outpatient basis. We work closely with psychiatrists and other health care professionals to ensure the most collaborative care possible.</p>
+				<p>
+					<a target="_self" class="zilla-button large link round" href="http://dev.mindabovematter.com/about"> Learn More </a>
+				</p>
+			</div>		
+		</div>
+
 		<?php if ( is_active_sidebar( 'upper-home-page' ) ){ ?>
 		<div class="upper-home-page widget-count-<?php echo zilla_count_sidebar_widgets( 'upper-home-page' ); ?>">
 			<div class="inner clearfix">

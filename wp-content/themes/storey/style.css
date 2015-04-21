@@ -3103,3 +3103,56 @@ button,.zilla-button {
 .touch .site-header-bg-img {
 	position:absolute;
 }
+
+/************** Custom Paradox Styling ****************/
+
+.phone a, .schedule a {
+	color: #ffffff;
+	background-color: #472e8d;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:20px;	
+}
+
+.phone a:hover, .schedule a:hover {
+	color: #ffffff;
+	background-color: #38246e!important;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:20px;	
+}
+
+.upper-home-page .widget_text { text-align: center; }
+
+.widget_text .fa-3x { color: #0c7571; }
+
+/************************** Header with image changes *******************************/
+
+.site-header.has-image .site-header-bg-img { opacity: .3; }
+.site-header.has-image { background-color: #ffffff; }
+
+
+.has-image .header-content h1, 
+.has-image .header-content { 
+	color: #2b2e33; 
+}
+
+.site-header.has-image .primary-menu a, 
+.page-template-template-home-php .primary-menu a
+.page-template-template-home-php .primary-menu .current-menu-item > a { 
+	color: #2b2e33;
+} 
+
+.site-header.has-image .primary-menu .nav-btn a, 
+.page-template-template-home-php .primary-menu .nav-btn a { 
+	color: #fff; 
+}
+
+.site-header.has-image .primary-menu a:hover, 
+.page-template-template-home-php .primary-menu a:hover {
+	color: inherit;
+}
+
+/************************** End Header with image changes *******************************/
