@@ -146,6 +146,12 @@ $theme_options = get_theme_mod('zilla_theme_options');
 								$subtitle = get_post_meta( $featured_id, '_zilla_page_subtitle', true );
 								if( $subtitle ){ ?>
 								<p class="lead"><?php echo $subtitle; ?></p>
+									<?php if ( is_page_template('template-home.php') ) { ?>
+									<p>
+										<a href="http://dev.mindabovematter.com/what-to-expect" class="zilla-button medium border round">What to Expect</a>
+										<a href="http://dev.mindabovematter.com/schedule" class="zilla-button medium accent round">Get Started</a>									
+									</p>
+									<?php } ?>
 								<?php } ?>
 								<?php if( is_singular( 'portfolio' ) ) { ?>
 								<div class="entry-categories">

@@ -923,8 +923,8 @@ body.single-post.no-sidebar .header-content {
 }
 
 .site-header.has-image .primary-menu a:hover,.site-header.has-image .primary-menu .sfHover > a,.site-header.has-image .primary-menu .current-menu-item > a,.page-template-template-home-php .primary-menu a:hover,.page-template-template-home-php .primary-menu .sfHover > a,.page-template-template-home-php .primary-menu .current-menu-item > a {
-	color:#fff;
-	background:rgba(255,255,255,0.2);
+	/*color:#fff;
+	background:rgba(255,255,255,0.2);*/
 }
 
 .primary-menu .sf-with-ul {
@@ -3108,30 +3108,51 @@ button,.zilla-button {
 
 .phone a, .schedule a {
 	color: #ffffff;
-	background-color: #472e8d;
-	-webkit-border-radius:20px;
-	-moz-border-radius:20px;
-	-o-border-radius:20px;
-	border-radius:20px;	
+	background-color: #2ebeb1;  	
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-o-border-radius:30px;
+	border-radius:30px;	
 }
 
 .phone a:hover, .schedule a:hover {
 	color: #ffffff;
-	background-color: #38246e!important;
-	-webkit-border-radius:20px;
-	-moz-border-radius:20px;
-	-o-border-radius:20px;
-	border-radius:20px;	
+	background-color: #26a095!important;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-o-border-radius:30px;
+	border-radius:30px;	
 }
+
+/*.site-header.has-image .phone a, .site-header.has-image .schedule a {
+	color: #ffffff;
+	background: none!important;
+  	border: 2px solid #fff!important;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-o-border-radius:30px;
+	border-radius:30px;	
+}
+
+.site-header.has-image .phone a:hover, .site-header.has-image .schedule a:hover {
+	color: #2b2e33!important;
+	text-shadow: none!important;	
+	border: 2px solid #fff!important;
+	background-color: #ffffff!important;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-o-border-radius:30px;
+	border-radius:30px;	
+}*/
 
 .upper-home-page .widget_text { text-align: center; }
 
-.widget_text .fa-3x { color: #0c7571; }
+.widget_text .fa-3x { color: #2ebeb1; }
 
 /************************** Header with image changes *******************************/
 
 .site-header.has-image .site-header-bg-img { opacity: .3; }
-.site-header.has-image { background-color: #ffffff; }
+/* .site-header.has-image { background-color: #ffffff; }
 
 
 .has-image .header-content h1, 
@@ -3155,4 +3176,14 @@ button,.zilla-button {
 	color: inherit;
 }
 
+.page-template-template-home-php .primary-menu .current-menu-item > a {
+  color: #2b2e33!important;
+  background: rgba(182,188,191,0.2)!important;
+  border-radius: 20px!important;
+}
+
 /************************** End Header with image changes *******************************/
+
+/*.site-footer { color: #2b2e33; }
+
+.site-footer .social a svg { fill: #2b2e33; }*/
