@@ -23,19 +23,13 @@ $theme_options = get_theme_mod('zilla_theme_options');
 				</div>
 			<?php } ?>
 			<div class="inner clearfix">
-
-				<div class="social">
-					<?php
-					if( isset($theme_options['facebook_url']) && $theme_options['facebook_url'] ){ echo '<a href="'. filter_var( $theme_options['facebook_url'], FILTER_SANITIZE_URL ) .'" class="facebook" title="Follow on Facebook">'; include( get_template_directory() .'/images/social/facebook.svg' ); echo '</a>'; }
-					if( isset($theme_options['twitter_url']) && $theme_options['twitter_url'] ){ echo '<a href="'. filter_var( $theme_options['twitter_url'], FILTER_SANITIZE_URL ) .'" class="twitter" title="Follow on Twitter">'; include( get_template_directory() .'/images/social/twitter.svg' ); echo '</a>'; }
-					if( isset($theme_options['linkedin_url']) && $theme_options['linkedin_url'] ){ echo '<a href="'. filter_var( $theme_options['linkedin_url'], FILTER_SANITIZE_URL ) .'" class="linkedin" title="Follow on LinkedIn">'; include( get_template_directory() .'/images/social/linkedin.svg' ); echo '</a>'; }
-					if( isset($theme_options['behance_url']) && $theme_options['behance_url'] ){ echo '<a href="'. filter_var( $theme_options['behance_url'], FILTER_SANITIZE_URL ) .'" class="behance" title="Follow on Behance">'; include( get_template_directory() .'/images/social/behance.svg' ); echo '</a>'; }
-					if( isset($theme_options['dribbble_url']) && $theme_options['dribbble_url'] ){ echo '<a href="'. filter_var( $theme_options['dribbble_url'], FILTER_SANITIZE_URL ) .'" class="dribbble" title="Follow on Dribbble">'; include( get_template_directory() .'/images/social/dribbble.svg' ); echo '</a>'; }
-					if( isset($theme_options['pinterest_url']) && $theme_options['pinterest_url'] ){ echo '<a href="'. filter_var( $theme_options['pinterest_url'], FILTER_SANITIZE_URL ) .'" class="pinterest" title="Follow on Pinterest">'; include( get_template_directory() .'/images/social/pinterest.svg' ); echo '</a>'; }
-					if( isset($theme_options['tumblr_url']) && $theme_options['tumblr_url'] ){ echo '<a href="'. filter_var( $theme_options['tumblr_url'], FILTER_SANITIZE_URL ) .'" class="tumblr" title="Follow on Tumblr">'; include( get_template_directory() .'/images/social/tumblr.svg' ); echo '</a>'; }
-					if( isset($theme_options['instagram_url']) && $theme_options['instagram_url'] ){ echo '<a href="'. filter_var( $theme_options['instagram_url'], FILTER_SANITIZE_URL ) .'" class="instagram" title="Follow on Instagram">'; include( get_template_directory() .'/images/social/instagram.svg' ); echo '</a>'; }	
-					if( isset($theme_options['googleplus_url']) && $theme_options['googleplus_url'] ){ echo '<a href="'. filter_var( $theme_options['googleplus_url'], FILTER_SANITIZE_URL ) .'" class="google-plus" title="Follow on Google+">'; include( get_template_directory() .'/images/social/google-plus.svg' ); echo '</a>'; }										
-					?>					
+				<div class="creds">
+					<a href="http://www.jointcommission.org/" target="_blank">
+						<img src="http://dev.mindabovematter.com/wp-content/uploads/2015/04/Joint-Commission-new.png"/>
+					</a>
+					<a href="http://www.bbb.org/fort-worth/business-reviews/psychiatrists-and-psychiatric-services/mind-above-matter-llc-in-burleson-tx-235976480" target="_blank">
+						<img src="http://dev.mindabovematter.com/wp-content/uploads/2015/04/BBB-new.png" />
+					</a>
 				</div>
 
 				<!-- BEGIN #logo .site-logo-->
@@ -68,11 +62,25 @@ $theme_options = get_theme_mod('zilla_theme_options');
 				<div class="footer-content">
 					<!-- A client-centered facility promoting growth and healing through collaborative efforts.<br/> -->
 					2915 S Burleson Blvd. Burleson, TX 76028<br/>
-					(817) 447-3001 or info@mabovem.com
+					<a href="tel:8174473001">(817) 447-3001</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="mailto:info@mabovem.com">info@mabovem.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="/careers">Careers</a>
 				</div>
 				<?php // if ( isset($theme_options['general_footer_content']) && $theme_options['general_footer_content']) { ?>
 				<!-- <div class="footer-content"><?php echo $theme_options['general_footer_content']; ?></div> -->
 				<?php // } ?>
+
+				<div class="social">
+					<?php
+					if( isset($theme_options['facebook_url']) && $theme_options['facebook_url'] ){ echo '<a href="'. filter_var( $theme_options['facebook_url'], FILTER_SANITIZE_URL ) .'" class="facebook" title="Follow on Facebook">'; include( get_template_directory() .'/images/social/facebook.svg' ); echo '</a>'; }
+					if( isset($theme_options['twitter_url']) && $theme_options['twitter_url'] ){ echo '<a href="'. filter_var( $theme_options['twitter_url'], FILTER_SANITIZE_URL ) .'" class="twitter" title="Follow on Twitter">'; include( get_template_directory() .'/images/social/twitter.svg' ); echo '</a>'; }
+					if( isset($theme_options['linkedin_url']) && $theme_options['linkedin_url'] ){ echo '<a href="'. filter_var( $theme_options['linkedin_url'], FILTER_SANITIZE_URL ) .'" class="linkedin" title="Follow on LinkedIn">'; include( get_template_directory() .'/images/social/linkedin.svg' ); echo '</a>'; }
+					if( isset($theme_options['behance_url']) && $theme_options['behance_url'] ){ echo '<a href="'. filter_var( $theme_options['behance_url'], FILTER_SANITIZE_URL ) .'" class="behance" title="Follow on Behance">'; include( get_template_directory() .'/images/social/behance.svg' ); echo '</a>'; }
+					if( isset($theme_options['dribbble_url']) && $theme_options['dribbble_url'] ){ echo '<a href="'. filter_var( $theme_options['dribbble_url'], FILTER_SANITIZE_URL ) .'" class="dribbble" title="Follow on Dribbble">'; include( get_template_directory() .'/images/social/dribbble.svg' ); echo '</a>'; }
+					if( isset($theme_options['pinterest_url']) && $theme_options['pinterest_url'] ){ echo '<a href="'. filter_var( $theme_options['pinterest_url'], FILTER_SANITIZE_URL ) .'" class="pinterest" title="Follow on Pinterest">'; include( get_template_directory() .'/images/social/pinterest.svg' ); echo '</a>'; }
+					if( isset($theme_options['tumblr_url']) && $theme_options['tumblr_url'] ){ echo '<a href="'. filter_var( $theme_options['tumblr_url'], FILTER_SANITIZE_URL ) .'" class="tumblr" title="Follow on Tumblr">'; include( get_template_directory() .'/images/social/tumblr.svg' ); echo '</a>'; }
+					if( isset($theme_options['instagram_url']) && $theme_options['instagram_url'] ){ echo '<a href="'. filter_var( $theme_options['instagram_url'], FILTER_SANITIZE_URL ) .'" class="instagram" title="Follow on Instagram">'; include( get_template_directory() .'/images/social/instagram.svg' ); echo '</a>'; }	
+					if( isset($theme_options['googleplus_url']) && $theme_options['googleplus_url'] ){ echo '<a href="'. filter_var( $theme_options['googleplus_url'], FILTER_SANITIZE_URL ) .'" class="google-plus" title="Follow on Google+">'; include( get_template_directory() .'/images/social/google-plus.svg' ); echo '</a>'; }										
+					?>					
+				</div>				
 
 			</div>
 		<?php zilla_footer_end(); ?>
