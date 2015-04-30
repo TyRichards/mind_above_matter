@@ -15,7 +15,7 @@ get_header(); ?>
 		<!-- customer area added by Paradox -->
 		<div class="inner clearfix">
 			<div class="zilla-one-half">
-				<img src="http://dev.mindabovematter.com/wp-content/uploads/2015/04/couple-content.jpg" alt="Mind Above Matter" class="alignnone size-full"/>
+				<img src="<?php echo get_template_directory_uri(); ?>/images/couple-content.jpg" alt="Mind Above Matter" class="alignnone size-full"/>
 			</div>
 			<div class="zilla-one-half zilla-column-last">
 				<h2>Mind Above Matter</h2>			
