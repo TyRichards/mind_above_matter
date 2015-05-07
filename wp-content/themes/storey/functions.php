@@ -119,6 +119,16 @@ function zilla_sidebars_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	));
+	
+	register_sidebar(array(
+		'name' => __('Footer Menu', 'zilla'),
+		'description' => __('Widget area for footer menu.', 'zilla'),
+		'id' => 'footer-menu',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	));	
 }
 endif;
 add_action( 'widgets_init', 'zilla_sidebars_init' );

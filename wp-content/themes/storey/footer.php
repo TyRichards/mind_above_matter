@@ -59,10 +59,10 @@ $theme_options = get_theme_mod('zilla_theme_options');
 
 				<p class="site-tagline"><?php bloginfo( 'description' ); ?></p>
 				
-				<div class="footer-content">
+				<div class="footer-content">					
 					<!-- A client-centered facility promoting growth and healing through collaborative efforts.<br/> -->
-					2915 S Burleson Blvd. Burleson, TX 76028<br/>
-					<a href="tel:8174473001">(817) 447-3001</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="mailto:info@mabovem.com">info@mabovem.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="/careers">Careers</a>
+					2915 S Burleson Blvd. Burleson, TX 76028<br/>					
+					<?php dynamic_sidebar('footer-menu'); ?>
 				</div>
 				<?php // if ( isset($theme_options['general_footer_content']) && $theme_options['general_footer_content']) { ?>
 				<!-- <div class="footer-content"><?php echo $theme_options['general_footer_content']; ?></div> -->

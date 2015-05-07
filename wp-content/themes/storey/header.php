@@ -146,11 +146,19 @@ $theme_options = get_theme_mod('zilla_theme_options');
 								$subtitle = get_post_meta( $featured_id, '_zilla_page_subtitle', true );
 								if( $subtitle ){ ?>
 								<p class="lead"><?php echo $subtitle; ?></p>
-									<?php if ( is_page_template('template-home.php') ) { ?>
+									<?php if ( is_page_template('template-home.php') ) { ?>							
 									<p>
+										<?php if(get_field('home_button_text_1')) { ?>
+											<a href="<?php the_field('home_button_url_1'); ?>" class="zilla-button medium border round"><?php the_field('home_button_text_1'); ?></a>
+										<?php } ?>
+										<?php if(get_field('home_button_text_2')) { ?>
+											<a href="<?php the_field('home_button_url_2'); ?>" class="zilla-button medium accent round"><?php the_field('home_button_text_2'); ?></a>		
+										<?php } ?>							
+									</p>
+<!-- 									<p>
 										<a href="http://dev.mindabovematter.com/what-to-expect" class="zilla-button medium border round">What to Expect</a>
 										<a href="http://dev.mindabovematter.com/schedule" class="zilla-button medium accent round">Get Started</a>									
-									</p>
+									</p> -->									
 									<?php } ?>
 								<?php } ?>
 								<?php if( is_singular( 'portfolio' ) ) { ?>
