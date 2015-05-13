@@ -27,9 +27,9 @@ $theme_options = get_theme_mod('zilla_theme_options');
 					<a href="http://www.jointcommission.org/" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/Joint-Commission-new.png"/>
 					</a>
-<!-- 					<a href="http://www.bbb.org/fort-worth/business-reviews/psychiatrists-and-psychiatric-services/mind-above-matter-llc-in-burleson-tx-235976480" target="_blank">
+					<a href="http://www.bbb.org/fort-worth/business-reviews/psychiatrists-and-psychiatric-services/mind-above-matter-llc-in-burleson-tx-235976480" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/BBB-new.png" />
-					</a> -->
+					</a>
 				</div>
 
 				<!-- BEGIN #logo .site-logo-->
