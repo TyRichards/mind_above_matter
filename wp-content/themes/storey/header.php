@@ -45,6 +45,17 @@ $theme_options = get_theme_mod('zilla_theme_options');
 <body <?php body_class(); ?>>
 <?php zilla_body_start(); ?>
 
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-63013642-1', 'auto');
+		ga('send', 'pageview');
+	</script>	
+
 	<!-- BEGIN #container -->
 	<div id="container" class="hfeed site">
 
@@ -132,7 +143,7 @@ $theme_options = get_theme_mod('zilla_theme_options');
 							<?php if( have_posts() ) : while (have_posts()) : the_post(); ?>
 								<div data-start="opacity:1;" data-top-bottom="opacity:0;">
 									<?php the_content(); ?>
-								</div>
+								</div>								
 							<?php endwhile; endif; wp_reset_query(); ?>
 						</div>
 					<?php }
@@ -141,7 +152,7 @@ $theme_options = get_theme_mod('zilla_theme_options');
 						<div class="header-content <?php echo $header_image ? 'with-thumbnail' : 'no-thumbnail'; ?>">
 							<div data-start="opacity:1;" data-100-top="opacity:0;">								
 								<h1 class="page-title"><?php echo get_the_title( $featured_id ); ?></h1>
-								
+
 								<?php 
 								$subtitle = get_post_meta( $featured_id, '_zilla_page_subtitle', true );
 								if( $subtitle ){ ?>
@@ -160,6 +171,9 @@ $theme_options = get_theme_mod('zilla_theme_options');
 										<a href="http://dev.mindabovematter.com/schedule" class="zilla-button medium accent round">Get Started</a>									
 									</p> -->									
 									<?php } ?>
+								
+								<p class="subscribe-button"><a class="zilla-button medium border round" href="/subscribe">Subscribe here</a></p>
+
 								<?php } ?>
 								<?php if( is_singular( 'portfolio' ) ) { ?>
 								<div class="entry-categories">

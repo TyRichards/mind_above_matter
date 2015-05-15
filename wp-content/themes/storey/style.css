@@ -690,7 +690,8 @@ body.single-post .site-header {
 }
 
 .site-header.has-image .header-area .inner {
-	height:600px;
+	/*height:600px;*/
+	height: 500px;
 }
 
 .site-logo {
@@ -3286,6 +3287,10 @@ body .gform_button:hover {
 	background-color: #38246e;
 }
 
+.gform_wrapper .top_label .gfield_label {
+  display: inline-block!important;
+}
+
 /* End Gforms */
 
 footer .menu li {
@@ -3297,3 +3302,18 @@ footer .menu li {
 footer .menu { margin-left: 0; }
 footer .menu li:first-child { margin-left: 0; }
 footer .menu li:last-child { border: none; }
+
+
+#masthead { height: 475px!important; }
+
+.page .type-page { padding: 60px 0; }
+
+.inner { padding: 0 20px 80px 20px; }
+
+.site-main .inner {
+	padding-bottom: 0px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.subscribe-button { display: none; }
+.blog .subscribe-button { display: block!important; }
