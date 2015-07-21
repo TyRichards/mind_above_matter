@@ -3317,3 +3317,8 @@ footer .menu li:last-child { border: none; }
 
 .subscribe-button { display: none; }
 .blog .subscribe-button { display: block!important; }
+
+footer .footer-content ul#menu-footer-menu,
+footer .footer-content .widget_nav_menu { 
+	margin-bottom: 0; 
+}
