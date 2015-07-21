@@ -64,8 +64,10 @@ $theme_options = get_theme_mod('zilla_theme_options');
 				
 				<div class="footer-content">					
 					<!-- A client-centered facility promoting growth and healing through collaborative efforts.<br/> -->
-					2915 S Burleson Blvd. Burleson, TX 76028<br/>					
+
 					<?php dynamic_sidebar('footer-menu'); ?>
+					<strong>Burleson:</strong> 2915 S Burleson Blvd. Burleson, TX 76028 | Fax: (817) 289-5699<br/>	
+					<strong>Keller:</strong> 4232 Heritage Trace Pkwy. Keller, TX 76244 | Fax: (817) 289-5674<br/>	
 				</div>
 				<?php // if ( isset($theme_options['general_footer_content']) && $theme_options['general_footer_content']) { ?>
 				<!-- <div class="footer-content"><?php echo $theme_options['general_footer_content']; ?></div> -->
